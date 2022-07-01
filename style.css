@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background: rgb(186,234,246);
+  background: linear-gradient(90deg, rgba(186,234,246,1) 0%, rgba(255,255,255,1) 29%, rgba(246,246,246,1) 65%, rgba(150,89,116,1) 100%);
 }
 .conteiner {
  position: relative;
@@ -12,7 +14,7 @@ body {
   font-size: 10px;
   letter-spacing: 25px;
   margin-left: 34pt;
-  margin-top: 19pt;
+  margin-top: 25pt;
 }
 
 .logotwo {
@@ -20,9 +22,44 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-size: 6px;
   letter-spacing: 22px;
-  margin-left: 36pt;
-  margin-top: 3pt;
+  margin-left: 35pt;
+  margin-top: 15pt;
 }
+
+.icons {
+ position: absolute;
+ margin-top: -630px;
+ margin-left: 75px;
+
+}
+.fa {
+  padding: 54px;
+  font-size: 10px;
+  height: 10;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 77%;
+  margin-left: 215pt;
+  margin-top: 2400px;
+  animation: mymove 5s infinite;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+background: #cbcbcb;
+color: white;
+}
+.fa-linkedin {
+background: #cbcbcb;
+color: white;
+}
+.fa-instagram {
+background: #cbcbcb;
+color: white;
+}
+
 .circle {
   width: 100%;
   height: 100%;
@@ -86,6 +123,31 @@ h1 span {
   margin-left: 570px;
 }
 
+.look {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18pt;
+  letter-spacing: 7px;
+  margin-top: 240px;
+  margin-left: 20px;
+  text-align: center;
+  color: rgb(157, 98, 123);
+  text-shadow: 0px 0px 10px #c4005933;
+  transition: .5s;
+  cursor:pointer
+}
+
+.look:hover {
+  text-shadow: 0px 5px 20px #854659;
+}
+
+.look a {
+  text-decoration: none;
+  color:#ffffff;
+  font-family: 'oswald', helvetica, arial, sans-serif;
+  font-weight: 600;
+  }
+
 .about {
   position: absolute;
   font-size: 12pt;
@@ -93,9 +155,62 @@ h1 span {
   font-weight: bold;
   margin-left: 184px;
   margin-top: 242px;
-  text-align: center;
 }
 
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+.ciao {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 69pt;
+  margin-top: 900px;
+  margin-left: 0px;
+  margin-right: 0px;
+  letter-spacing: 16px;
+  margin-bottom: 45px;
+  transform: rotate(360deg);
+  color: rgb(190 107 107);
+  position: absolute;
+  animation: mymove 8s infinite;
+}
+
+.ciao {
+animation-timing-function: linear;
+}
+@keyframes mymove {
+from {left: -700px;}
+to {left: 0px}
+}
+
+.me {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 1250px;
+  margin-left: 570px;
+  margin-right: 520px;
+}
+
+.see {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20pt;
+  margin-top: 1600px;
+  margin-left: 650px;
+  margin-right: 0px;
+  letter-spacing: 16px;
+  margin-bottom: 45px;
+  transform: rotate(360deg);
+  color: rgb(0, 0, 0);
+  position: absolute;
+}
 
 .text {
   font-size: 60pt;
@@ -120,19 +235,53 @@ h1 span {
 }
 
 
-/*NUMBER 1*/
-
-
 .image {
   position: relative;
-  top: 130vh;
-  width: 327px;
-  height: 418px;
-  margin-left: 55px;
+  top: 220vh;
+  width: 300px;
+  height: 300px;
+  margin-left: 75px;
   margin-right: 30px;
-  border-radius: 20px;
+  border-radius: 50%;
   overflow: hidden;
   float: left;
+}
+
+.image:hover {
+  transition-duration: 0.5s;
+  box-shadow: 0 10px 40px -4px rgb(0 0 0 / 55%);
+}
+
+.image:hover .save-button {
+  transform: translateX(30px);
+}
+
+.save-button {
+  position: absolute;
+  right: 82px;
+  top: 76px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background-color: #c7a1a1;
+  box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+  cursor: pointer;
+  transform: translateX(230px); 
+  transition: transform 0.3s;
+}
+
+.save-text {
+  position: absolute;
+  top: -27px;
+  right: 49px;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 0;
+  margin: auto;
+  color: aliceblue;
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .image img {
@@ -140,5 +289,19 @@ h1 span {
   height: 100%;
   object-fit: cover;
 }
+
+.copy {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 10px;
+  margin-left: 530pt;
+  margin-top: 270vh;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.66);
+  padding-bottom: 20px;
+  position: absolute;
+}
+
 
 
