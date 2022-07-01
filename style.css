@@ -161,13 +161,14 @@ h1 span {
   position: relative;
   width: 100%;
   height: 100%;
+ 
 
 }
 .ciao {
   font-family: 'DM Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-size: 69pt;
-  margin-top: 900px;
+  margin-top: 850px;
   margin-left: 0px;
   margin-right: 0px;
   letter-spacing: 16px;
@@ -186,6 +187,16 @@ from {left: -700px;}
 to {left: 0px}
 }
 
+
+.fotoimage {
+  background-image: url(mee.png);
+  width: 250px;
+  height: 250px;
+  display: block;
+  position: absolute;
+  margin-top: 1100px;
+  margin-left: 720px;
+}
 .me {
   position: absolute;
   font-size: 12px;
@@ -193,7 +204,7 @@ to {left: 0px}
   font-weight: bold;
   text-align: center;
   line-height: 20px;
-  margin-top: 1250px;
+  margin-top: 1450px;
   margin-left: 570px;
   margin-right: 520px;
 }
@@ -202,7 +213,8 @@ to {left: 0px}
   font-family: 'DM Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-size: 20pt;
-  margin-top: 1600px;
+  text-align: center;
+  margin-top: 1650px;
   margin-left: 650px;
   margin-right: 0px;
   letter-spacing: 16px;
@@ -258,7 +270,7 @@ to {left: 0px}
 
 .save-button {
   position: absolute;
-  right: 82px;
+  right: 110px;
   top: 76px;
   border-radius: 50%;
   width: 140px;
@@ -266,14 +278,14 @@ to {left: 0px}
   background-color: #c7a1a1;
   box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
   cursor: pointer;
-  transform: translateX(230px); 
+  transform: translateX(250px); 
   transition: transform 0.3s;
 }
 
 .save-text {
   position: absolute;
   top: -27px;
-  right: 49px;
+  right: 59px;
   bottom: 0;
   left: 0;
   width: 0px;
@@ -296,7 +308,7 @@ to {left: 0px}
   font-size: 10px;
   letter-spacing: 10px;
   margin-left: 530pt;
-  margin-top: 270vh;
+  margin-top: 265vh;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.66);
   padding-bottom: 20px;
