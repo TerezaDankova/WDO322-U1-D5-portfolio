@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO PAGE</title>
+<style>
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  #navbar {
+    background-color: rgb(255, 255, 255);;
+    position: sticky;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;  
+    font-size: 5pt;
+    letter-spacing: 20px;
+    margin-left: 34pt;
+    margin-top: 19pt;
+  }
+  #fotoimage {
+    background-image: url(foto1.png);
+    width: 819px;
+    height: 1300px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150pt;
+  }
+  #text {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 60pt;
+    letter-spacing: 79px;
+    margin-left: 120pt;
+    margin-top: -1019pt;
+    font-weight: bold;
+    transform: rotate(deg);
+  }   
+  #texttwo {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30pt;
+    letter-spacing: 42px;
+    margin-left: 615pt;
+    margin-top: 365pt;
+    font-weight: bold;
+    transform: rotate(90deg);
+  }
+  #textthree {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 148pt;
+    letter-spacing: 64px;
+    margin-left: 1004pt;
+    margin-top: -581pt;
+    font-weight: bold;
+    transform: rotate(90deg);
+    color: rgb(215 190 183 / 66%);
+  }
+  .text-conteiner {
+    width: 1260pt;
+    height: 1100pt;
+    background-color: rgb(255, 255, 255);
+  }
+   #circle {
+    background: rgb(215 190 183);
+    width: 300px;
+    height: 300px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-left: 836pt;
+    margin-top: -1220pt;
+    border-radius: 215px;
+    box-shadow: 0px 1px 3px #3e403e;
+    transition: .5s;
+   }
+   #circle:hover {
+     box-shadow: 0px 5px 15px #3e403e;
+   }
+   #aboutme {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 8pt;
+    text-align: center;
+    margin-left: 114pt;
+    margin-right: 800pt;
+    margin-top: 349pt;
+    color: rgb(251, 251, 251);
+   }
+
+   #rectangle {
+    height: 300px;
+    width: 624px;
+    background-color: #d7beb7;
+    margin-left: 38pt;
+    margin-top:  271pt;
+   }
+   #rectangledue {
+    height: 550px;
+    width: 15px;
+    background-color: #d7beb7;
+    margin-left: 132pt;
+    margin-top: -561pt;
+    } 
+    #rectangletre {
+    height: 200px;
+    margin-left: 200pt;
+    margin-top: 230pt;
+  }
+
+  #look {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14pt;
+    letter-spacing: 7px;
+    text-align: center;
+    margin-left: 51pt;
+    margin-right: -595pt;
+    margin-top: -547pt;
+    transform: rotate(60deg);
+    color: white;
+    text-shadow: 0px 0px 5px #3e403e;
+    transition: .5s;
+    cursor:pointer
+  }
+  #look a {
+  text-decoration: none;
+  color:#b3cd9b;
+  font-family: 'oswald', helvetica, arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  }
+  #play {
+    background-color: rgb(206 229 207);
+    height: 286px;
+    width: 286px;
+    position: absolute;
+    left: 765px;
+    bottom: -1131px;
+    border-radius: 177px;
+    cursor: pointer;
+  }
+   #click {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30pt;
+    letter-spacing: 7px;
+    position: absolute;
+    left: 93px;
+    bottom: 27px;
+    right: 58%;
+    top: 40%;
+    color: white;
+
+  }
+  #play #click {
+    visibility: hidden;
+    transition:  visibility .5s ease;
+    transition:  transform .5s ease;
+  }
+  #play:hover #click {
+    
+    visibility: visible;
+    transition:  visibility .5s ease;
+    transform: translateX(300px);
+    transition:  transform .9s ease;
+  }
+   #look:hover {
+     text-shadow: 0px 5px 20px #3e403e;
+   }
+  #ciao {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 69pt;
+    letter-spacing: 16px;
+    text-align: center;
+    margin-left: -457pt;
+    margin-right: 398pt;
+    margin-top: 343pt;
+    transform: rotate(349deg);
+    color: rgb(190 107 107);
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+#div1 {
+  animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {left: -448px;}
+  to {left: 100px}
+}
+  #create {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 8pt;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-left: 484px;
+    margin-right: 349pt;
+    margin-top: 586pt;
+    color: rgb(0 0 0);
+  }
+  #copy {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 10px;
+    margin-left: 530pt;
+    margin-top: 36pt;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.66);
+  }
+   #copyid {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16pt;
+    letter-spacing: 64px;
+    margin-left: 514pt;
+    margin-top: -16pt;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.66);
+   }
+  #me {
+    background-image: url(mee.png);
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 576px;
+    display: block;
+    margin-left: -21pt;
+    margin-right: auto;
+    margin-top: -635pt;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  #div2 {
+  animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {left: -448px;}
+  to {left: 100px}
+}
+  .fa {
+    padding: 39px;
+    font-size: 30px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: -72px 2px;
+    border-radius: 77%;
+    margin-left: 60pt;
+    margin-top: 351pt;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #cbcbcb;
+  color: white;
+}
+.fa-linkedin {
+  background: #cbcbcb;
+  color: white;
+}
+.fa-instagram {
+  background: #cbcbcb;
+  color: white;
+}
+#hobbies {
+    margin-top: 109pt;
+    margin-left: 205pt;
+    font-size: 30pt;
+    font-family: 'Roboto Mono';
+    box-shadow: rgb(184, 118, 118);
+    padding-left: 177pt;
+    padding-top: -8pt;
+    box-sizing: 40pt;
+    background-size: 60%;
+    cursor: pointer; 
+    box-shadow: 0px 1px 3px #3e403e;
+    transition: .5s;
+    background-color: #b3cd9b;
+    background-size: 50pt;
+    width: 579pt;
+    height: 45pt;
+   }
+ #hobbiese:hover {
+     box-shadow: 0px 5px 15px #3e403e;
+     color:#c7437c;
+     background-color: pink;
+   }
+#hobbies:link, #hobbies:visited {
+  background-color: rgb(197, 105, 105);
+  color: rgb(230, 52, 52);
+  border: 2px solid rgb(116, 51, 88);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#hobbies:hover, #hobbies:active {
+  background-color: rgb(124, 160, 124);
+  color: rgb(216, 56, 56);
+}
+#hobbies a {
+   text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Mono';
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 11pt;
+    margin-left: -66pt;
+    margin-right: 5pt;
+}
+#rectanglefour {
+    height: 210px;
+    width: 1002px;
+    background-color: #fefffe00;
+    margin-left: 286pt;
+    margin-top: -100pt;
+  }
+  #rectanglefive {
+    height: 930px;
+    width: 12px;
+    background-color: #b3cd9b;
+    margin-left: 514pt;
+    margin-top: -801pt;
+  }
+  #email {
+    margin-top: -1193px;
+    margin-left: 30;
+    margin-bottom: 88pt;
+    margin-right: 984pt;
+    color: pink;
+    font-family: 'Roboto Mono';
+    font-style: inherit;
+    transform: rotate(270deg);
+  }
+  #email a {
+  text-decoration: none;
+  color:#c7a5a5;
+  font-family: 'oswald', helvetica, arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  }
+
+</style>
+</head>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto+Mono:ital,wght@1,200;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto+Mono:ital,wght@0,700;1,200;1,400&display=swap" rel="stylesheet">
+  <div></div>
+   <div id="navbar">
+   <h1><span>TEREZA</span></h2><span>DANKOVA<span</h3>
+  </div>
+  <div class="text-conteiner">
+    <div id="fotoimage"></div>
+    <div id="text">CREATING</div> 
+    <div id="texttwo">DELIGHFUL EXPERIENCE</div>
+    <div id="textthree">PORTFOLIO</div>
+    <p id="aboutme">My name is Tereza and I am a young fashion designer just graduated at European Institute of Design (IED). I am 26 years old and I come from Czech Republic, but I have been living in Italy for over four years.
+      I am an efficient, tenacious and thoughtful person with wide capacities and aptitudes to be able carry out in a team and individually. I am able to interpret the specific needs of each project.</p>
+    <div id="look"> <a href="https://terezadanke.com/">MY WORK</a></div>
+    <div id="ciao">Ciao!</div>
+    <div id="div1"></div>
+    <div id="create">,,Let's create something meaningful together!'' (but not forever)</div>
+    <div id="copy">TEREZA DANKOVA 2022</div>
+    <div id="copyid">©</div>
+  <div id="circle"></div>
+  <div id="rectangle"></div>
+  <div id="rectangledue"></div>
+  <div id="rectangletre"></div>
+    <div id="me">
+    <div id="div2"></div>
+    <div>
+      <!-- Add icon library -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Add font awesome icons -->
+        <a href="https://terezadanke.com/" class="fa fa-facebook"></a>
+        <a href="https://it.linkedin.com/in/tereza-dankova-665563225?trk=people-guest_people_search-card" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/terezadanke_design/" class="fa fa-instagram"></a>
+      </div> 
+  </div>
+  <div id="hobbies">
+    <a href="file:///Users/terezadankova/Desktop/WD0222-U1-D5/index2.html">TAKE A LOOK ON MY HOBBIES!</a>
+  </div>
+  <div id="rectanglefour"></div>
+  <div id="rectanglefive"></div>
+  <div id="email">
+    <a href="mailto:tereza.dankova@ied.edu">Contact me</a>
+  </div>
+</body>
+</html>
